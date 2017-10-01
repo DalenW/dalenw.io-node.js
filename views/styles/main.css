@@ -1,0 +1,19 @@
+:root {
+    --background-yellow: #FDCD68;
+    --main-red: #DF393D;
+    --main-orange: #F7811C;
+    --main-yellow: #FBB828;
+    --main-green: #5FB946;
+    --main-blue: #009DDD;
+    --main-purple: #943B95;
+}
+
+* {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #EEEADF;
+}
