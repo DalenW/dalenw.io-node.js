@@ -15,5 +15,5 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.listen(3000);
+app.listen(8080);
 console.log("Started app");
