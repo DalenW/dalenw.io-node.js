@@ -12,8 +12,8 @@ app.set("views", "./views");
 
 //------------  views  -----------
 app.get("/", function(req, res) {
-    res.render("home");
+    res.render("index");
 });
 
-app.listen(8080);
+app.listen(3000);
 console.log("Started app");
