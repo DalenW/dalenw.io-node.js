@@ -1,7 +1,14 @@
 header {
     width: 100%;
-    height: 75px;
-    background-color: var(--background-yellow);
+    height: 150px;
+    background-color: var(--slategray);
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start
 }
 
 .headerDiv {
@@ -9,9 +16,34 @@ header {
 }
 
 #title {
-    width: 100%;
+    height: 75px;
+    padding-top: 37px;
+    padding-bottom: 38px;
+}
+
+#quicklinksDiv {
+    height: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: translateX(-20px);
+}
+
+.quicklinksItemDiv {
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: var(--color-primary-0);
+    transform: skewX(-30deg);
+}
+
+.quicklinksItem {
     height: 100%;
-    line-height: 100%;
+    color: white;
+    line-height: 50px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: center;
+    transform: skewX(30deg);
 }
