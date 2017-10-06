@@ -11,8 +11,8 @@ header {
     justify-content: flex-start
 }
 
-.headerDiv {
-    width: 50%;
+#titleDiv {
+    width: 49%;
 }
 
 #title {
@@ -23,6 +23,7 @@ header {
 
 #quicklinksDiv {
     height: 50px;
+    width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
