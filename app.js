@@ -1,8 +1,10 @@
 //initialize libraries
 var express = require("express");
+var https = require("express-force-https");
 
 //set the variables
 var app = express();
+app.use(https);
 
 //set the app
 app.set("view engine", "pug");
