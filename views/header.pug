@@ -2,22 +2,23 @@ style
     include ./styles/header.css
 div(id="header")
     div(id="titleDiv" class="headerDiv")
-        svg(id="title")
-            include ./images/Site_Logo.svg
+        a(href="/")
+            svg(id="title")
+                include ./images/Site_Logo.svg
     div(id="quicklinksDiv" class="headerDiv")
 
         div(class="quicklinksItemDiv")
-            a(href="")
+            a(href="about")
                 div(class="quicklinksItem") About
 
         div(class="quicklinksItemDiv")
-            a(href="")
+            a(href="contact")
                 div(class="quicklinksItem") Contact
     
         div(class="quicklinksItemDiv")
-            a(href="")
+            a(href="https://github.com/DalenW/")
                 div(class="quicklinksItem") Github
 
         div(class="quicklinksItemDiv")
-            a(href="")
+            a(href="projects")
                 div(class="quicklinksItem") Projects

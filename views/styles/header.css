@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    height: 150px;
     background-color: var(--slategray);
 }
 
@@ -11,25 +10,16 @@ header {
     justify-content: flex-start
 }
 
-#titleDiv {
-    width: 49%;
-}
 
-#title {
-    height: 75px;
-    padding-top: 37px;
-    padding-bottom: 38px;
-}
 
 #quicklinksDiv {
     height: 50px;
     width: 50%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    transform: translateX(-20px);
+    
 }
 
 .quicklinksItemDiv {
@@ -47,4 +37,52 @@ header {
     text-align: center;
     vertical-align: center;
     transform: skewX(30deg);
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+    #header {
+        flex-direction: column;
+    }
+
+    .headerDiv {
+        width: 100%;
+    }
+
+    #titleDiv {
+        align-content: center;
+    }
+
+    #title {
+        height: 75px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #quicklinksDiv {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+    #titleDiv {
+        width: 49%;
+    }
+
+    #title {
+        height: 75px;
+        padding-top: 37px;
+        padding-bottom: 38px;
+    }
+
+    #quicklinksDiv {
+        width: 50%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transform: translateX(-20px);
+    }
 }

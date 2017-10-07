@@ -17,6 +17,18 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
+app.get("/about", function(req, res) {
+    res.render("about");
+});
+
+app.get("/contact", function(req, res) {
+    res.render("contact");
+});
+
+app.get("/projects", function(req, res) {
+    res.render("projects");
+});
+
 
 app.listen(8080);
 console.log("Started app");
