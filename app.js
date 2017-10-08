@@ -4,7 +4,9 @@ var https = require("express-force-https");
 
 //set the variables
 var app = express();
-app.use(https);
+//app.use(https);
+
+var port = 10111
 
 //set the app
 app.set("view engine", "pug");
@@ -30,5 +32,5 @@ app.get("/projects", function(req, res) {
 });
 
 
-app.listen(8080);
-console.log("Started app");
+app.listen(port);
+console.log("Started app on port: " + port);
