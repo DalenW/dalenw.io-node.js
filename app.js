@@ -6,7 +6,7 @@ var https = require("express-force-https");
 var app = express();
 //app.use(https);
 
-var port = 10111
+var port = 80
 
 //set the app
 app.set("view engine", "pug");
