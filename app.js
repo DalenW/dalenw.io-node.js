@@ -1,10 +1,14 @@
 //initialize libraries
 var express = require("express");
-var https = require("express-force-https");
+var https = require("https");
 
 //set the variables
 var app = express();
-//app.use(https);
+
+var options = {
+    cert: fs.readFileSync("./sslcert/fullchain.pem"),
+    key: fs.readFileSync("./sslcert/privley.pem")
+};
 
 var port = 80
 
@@ -38,4 +42,5 @@ app.get("/projects", function(req, res) {
 
 
 app.listen(port);
+https.createServer(options, app).listen(8443);
 console.log("Started app on port: " + port);
