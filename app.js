@@ -11,6 +11,7 @@ var port = 80
 //set the app
 app.set("view engine", "pug");
 app.set("views", "./views");
+app.use(express.static("public"));
 
 
 
