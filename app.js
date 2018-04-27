@@ -1,4 +1,5 @@
 var express = require("express")
+    //var getIP = require("ipware")().get_ip;
 
 var app = express();
 
@@ -10,6 +11,7 @@ app.use(express.static("public"));
 
 //------------  views  -----------
 app.get("/", function(req, res) {
+    //var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
     console.log(`Got request for / from ${req.ip}`);
     res.render("index");
 });
