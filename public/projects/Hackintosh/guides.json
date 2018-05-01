@@ -1,13 +1,12 @@
 {
-    "guides": [
-        {
+    "guides": [{
             "name": "Test",
             "image": "Test",
             "folder": "test",
-            "show": true,
+            "show": false,
             "guide": [
                 "Line one",
-                "Line 2", 
+                "Line 2",
                 "/c This is code. \n\t code 2 \n idk",
                 "test line",
                 "test `quote` mmk",
@@ -152,7 +151,7 @@
                 "Your file should look like this now.",
                 "/c #!/bin/bash \n\n function main () \n { \n \t echo \\#\\#\\# Mounting EFI Partition \\#\\#\\#\\ \n\t sudo mkdir /Volumes/EFI \n\t sudo mount -t /dev/disk0s1 /Volumes/EFI \n\t exit 0 \n } \n\n main",
                 "That's basically it, but we want to make it better.",
-                
+
                 "/s Making it Better",
                 "We're gonna make it open the folder for us. This is done by",
                 "/c cd /Volumes/EFI/EFI \n open .",
@@ -161,7 +160,7 @@
 
                 "/s Full Script",
                 "/c #!/bin/bash \n\n function main () \n { \n \t echo \\#\\#\\# Mounting EFI Partition \\#\\#\\#\\ \n\n\t sudo mkdir /Volumes/EFI \n\t sudo mount -t msdos /dev/disk\"$disk\"s1 /Volumes/EFI \n\n\t cd /Volumes/EFI/EFI \n\t open . \n\n\t \\#\\#\\# Done \\#\\#\\#\\ \n\n\t exit 0 \n } \n\n main",
-                
+
                 "/s Making the Script Bootable",
                 "Open terminal and go to the script. If the script is on your desktop, just type `cd Desktop`.",
                 "Then you're gonna type `chmod +x \"name of file\"`"
