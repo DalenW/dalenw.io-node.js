@@ -1,5 +1,4 @@
 var express = require("express")
-    //var getIP = require("ipware")().get_ip;
 
 var app = express();
 
@@ -30,7 +29,6 @@ app.get("/projects", function(req, res) {
     console.log(`Got request for /projects from ${req.ip}`);
     res.render("projects");
 });
-
 
 app.listen(port);
 console.log("Started on port: " + port);
