@@ -11,9 +11,12 @@ main {
     padding-left: 5%;
     width: auto;
     background-color: white;
+    /*box-shadow: 3px 0px 25px black;*/
 }
 
 .pageTitle {
     text-align: center;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

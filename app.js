@@ -7,12 +7,14 @@ var port = 8000;
 app.set("view engine", "pug");
 app.set("views", "./views");
 app.use(express.static("public"));
+app.enable('trust proxy');
 
 //------------  views  -----------
 app.get("/", function(req, res) {
     //var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
     console.log(`Got request for / from ${req.ip}`);
-    res.render("index");
+    console.log(req.ips);
+    res.render("about");
 });
 
 app.get("/about", function(req, res) {
