@@ -13,7 +13,7 @@ app.enable('trust proxy');
 app.get("/", function(req, res) {
     //var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
     console.log(`Got request for / from ${req.ip}`);
-    console.log(req.ips);
+    //console.log(req.ips);
     res.render("about");
 });
 
