@@ -2,34 +2,40 @@ doctype html
 html
     head
         title Projects - DalenW
-        style
-            include ./styles/main.css
-        style
-            include ./styles/page_content.css
+        
     body
         header
             include header.pug
+            style
+                include ./styles/page_content.css
         main
             h1(class="pageTitle") Projects
 
-            a(href="weather/home.html")
-                h2(class="subTitle") Weather
-            p This is a weather website I created while first learning web design in college. It's not much but it works.
-            
-            br
+            div(id="project-cards")
+                div(class="card")
+                    div(class="card-body")
+                        h5(class="card-title") Weather
+                        h6(class="card-subtitle mb-2 text-muted") Spring 2017
+                        p(class="card-text") This is a weather website I created while first learning web design in college. It's not much but it works.
+                        a(href="weather/home.html" class="card-link") 
+                            button(type="button" class="btn btn-block btn-primary button-link") Link
 
-            a(href="hackintosh/index.html")
-                h2(class="subTitle") Hackintosh
-            p This is a hackintosh guide site I created for a final project. 
+                div(class="card")
+                    div(class="card-body")
+                        h5(class="card-title") Hackintosh
+                        h6(class="card-subtitle mb-2 text-muted") Spring 2017
+                        p(class="card-text") This is a hackintosh guide page I created for a final project. 
+                        a(href="hackintosh/index.html" class="card-link") 
+                            button(type="button" class="btn btn-block btn-primary button-link") Link
 
-            br
-
-            h2(class="subTitle") Test Projects
-            p A collection of random projects
-
-            a(href="test/catchthelink.html")
-                h4 Catch the Link
-
-            a(href="test/wordbubble.html")
-                h4 Word Bubble
-            
+                div(class="card")
+                    div(class="card-body")
+                        h5(class="card-title") Test Projects
+                        p(class="card-text") Just some test projects I created. Nothing special.
+                    ul(class="list-group list-group-flush")
+                        li(class="list-group-item")
+                            a(href="test/catchthelink.html" class="card-link") 
+                                button(type="button" class="btn btn-block btn-primary button-link") Catch the Link
+                        li(class="list-group-item")
+                            a(href="test/wordbubble.html" class="card-link") 
+                                button(type="button" class="btn btn-block btn-primary button-link") Word Bubble
