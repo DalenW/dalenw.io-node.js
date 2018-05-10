@@ -33,9 +33,20 @@
 
 html {
     background-color: white;
+    height: 100%;
+    margin: 0px;
 }
 
 a {
     color: black;
     text-decoration: none;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
 }
