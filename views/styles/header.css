@@ -38,6 +38,8 @@ header {
     text-align: center;
     vertical-align: center;
     transform: skewX(30deg);
+    font-size: 1.5rem;
+    font-weight: 175%;
 }
 
 
@@ -63,6 +65,9 @@ header {
         margin-left: 3%;
         margin-right: 3%;
         margin-bottom: 10px;
+    }
+    .quicklinksItem {
+        font-size: 150%;
     }
 }
 

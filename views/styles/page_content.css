@@ -22,6 +22,8 @@ main {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 4rem;
+    font-weight: bolder;
 }
 
 .button-link {
@@ -33,36 +35,4 @@ main {
 
 .button-link:hover {
     background-color: var(--color-primary-4);
-}
-
-#project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.card {
-    width: auto;
-    height: inherit;
-    margin: 1.25rem;
-    flex-basis: 18rem;
-    flex-grow: 1;
-}
-
-.card-body {
-    width: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.card-body p {
-    flex-grow: 5;
-}
-
-.list-group-item {
-    width: auto;
 }
